@@ -1,0 +1,93 @@
+/* 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* 제목 스타일 */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* 버튼을 담을 div 스타일 */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* "게임 시작" 버튼 및 사용자 이름 입력 필드 */
+#start-button, #username {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* 이미지 스타일 */
+.img {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 점수 표시 */
+.score {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 타이머 표시 */
+#timer {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: red;
+}
+
+/* 게임 버튼들 */
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* 리더보드 스타일 */
+#leaderboard {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#leaderboard li {
+    font-size: 1.2rem;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6일차 Click! Clicd!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Click! Clicd!</h1>
+
+    <!-- 게임 시작 버튼과 사용자 이름 입력 필드를 넣을 div -->
+    <div class="buttons-container">
+        <!-- 게임 시작 버튼 -->
+        <button id="start-button">게임 시작</button>
+        
+        <!-- 사용자 이름 입력 필드 -->
+        <input type="text" id="username" placeholder="사용자 이름을 입력하세요">
+    </div>
+
+    <!-- 이미지 표시 -->
+    <div class="img" id="img">
+        <img id="score-image" src="https://pbs.twimg.com/media/FVeXmPeacAAvkAb.jpg" alt="buttonimg" width="300">
+    </div>
+
+    <!-- 점수 표시 -->
+    <p class="score" id="score">점수 : 0</p>
+
+    <!-- 타이머 표시 -->
+    <p id="timer">남은 시간: 10초</p>
+
+    <!-- 버튼들 -->
+    <div class="container">
+        <button class="my-button" id="my-button" disabled>점수 올리기</button>
+        <button id="record-button" disabled>기록하기</button>
+        <button id="restart-button" disabled>게임 다시 시작하기</button> <!-- 게임 다시 시작 버튼 -->
+    </div>
+
+    <!-- 리더보드 표시 -->
+    <h2>기록을 갱신하세요!</h2>
+    <ul id="leaderboard">
+        <!-- 리더보드 항목들이 동적으로 추가될 부분 -->
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
